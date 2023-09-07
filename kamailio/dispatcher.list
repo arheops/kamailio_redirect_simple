@@ -1,0 +1,2 @@
+# setid(int) destination(sip uri) flags(int,opt) priority(int,opt) attributes(str,opt)
+1 sip:1.2.3.4:5060 1 2 delname=1;forward=1
