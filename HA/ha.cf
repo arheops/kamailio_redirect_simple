@@ -1,0 +1,18 @@
+node sf3.out.sipnex.ca
+ucast eth0 137.184.227.237
+ucast eth1 10.124.0.2
+
+node sf2.out.sipnex.ca
+ucast eth0 165.232.145.163
+ucast eth0 10.124.0.3
+
+logfile /var/log/ha-log
+logfacility local0
+#debug 5
+ # Timeouts suitable for clusters with 2-8 nodes
+ keepalive      1
+ warntime       6
+ deadtime       10
+ initdead       15
+
+auto_failback on
